@@ -11,6 +11,18 @@ void push(int val) {
 	         newnode->next = top; 
 		    top = newnode; 
 }
+
+void pop() {
+   if(top==NULL)
+      cout<<"Stack Underflow"<<endl;
+   else {
+      cout<<"The popped element is "<< top->data <<endl;
+      top = top->next;
+   }
+}
+
+
+
 	void display() {
    struct Node* ptr;
    if(top==NULL)
@@ -41,6 +53,10 @@ int main() {
 												             cin>>val;
 													                 push(val);
 															             break;
+									case 2: {
+            pop();
+            break;
+ 
 								    case 3: {
                                                                                           display();
                                                                                           break;
