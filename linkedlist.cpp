@@ -11,6 +11,21 @@ void push(int val) {
 	         newnode->next = top; 
 		    top = newnode; 
 }
+	void display() {
+   struct Node* ptr;
+   if(top==NULL)
+      cout<<"stack is empty";
+   else {   
+      ptr = top; 
+      cout<<"Stack elements are: ";
+      while (ptr != NULL) { 
+         cout<< ptr->data <<" "; 
+         ptr = ptr->next; 
+      } 
+   }
+   cout<<endl;
+}
+}
 int main() {
 	   int ch, val; 
 	      cout<<"1) Push in stack"<<endl;
@@ -26,6 +41,10 @@ int main() {
 												             cin>>val;
 													                 push(val);
 															             break;
+								    case 3: {
+                                                                                          display();
+                                                                                          break;
+                                                                                                   }
 																              }
 								     case 4: {
 										                 cout<<"Exit"<<endl;
