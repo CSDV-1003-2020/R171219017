@@ -44,7 +44,7 @@ int main() {
 								    case 3: {
                                                                                           display();
                                                                                           break;
-                                                                                                   }
+                                                                                                  }
 																              }
 								     case 4: {
 										                 cout<<"Exit"<<endl;
