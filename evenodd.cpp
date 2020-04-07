@@ -1,3 +1,4 @@
+
 #include <iostream>
 using namespace std;
 
@@ -9,10 +10,9 @@ int main()
 		    cin >> n;
 
 		        if ( n % 2 == 0)
-				        cout << n << " is even.";
+				 cout << n << " is even.";
 			    else
-				            cout << n << " is odd.";
-
-			        return 0;
+				cout << n << " is odd.";
+return 0;
 }
 
